@@ -3,6 +3,8 @@ package org.snapscript.android.agent;
 import java.net.URI;
 
 import org.snapscript.agent.ProcessAgent;
+import org.snapscript.core.EmptyModel;
+import org.snapscript.core.Model;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -20,6 +22,7 @@ public class ScriptAgent extends Activity {
    public void onCreate(Bundle bundle) {
       super.onCreate(bundle);
       try {
+         Model model = new EmptyModel();
          ProcessAgent agent = new ProcessAgent(
                URI.create("http://"+REMOTE_HOST+":"+HTTP_PORT+"/resource"), 
                "android-" + System.currentTimeMillis(), 
@@ -27,7 +30,7 @@ public class ScriptAgent extends Activity {
                EVENT_PORT, 
                THREAD_COUNT,
                STACK_SIZE);
-         agent.start();
+         agent.start(model);
       } catch (Exception e) {
          e.printStackTrace();
       }
