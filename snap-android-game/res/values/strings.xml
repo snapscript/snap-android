@@ -3,5 +3,13 @@
 
     <string name="app_name">Snake</string>
     <string name="title_activity_game">GameActivity</string>
+    <string name="remote_host">192.168.1.66</string>
+    <string name="remote_port">4457</string>
+    <string name="event_port">4456</string>
+    <string name="log_level">DEBUG</string>
+    <string name="context_name">context</string>
+    <string name="game_name">game</string>
+    <string name="thread_count">4</string>
+    <string name="stack_size">2000000</string>
 
 </resources>

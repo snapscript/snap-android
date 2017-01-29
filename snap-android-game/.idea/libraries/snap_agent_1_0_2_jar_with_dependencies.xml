@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="snap-agent-1.0.2-jar-with-dependencies">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/snap-agent-1.0.2-jar-with-dependencies.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../snap-develop/snap-agent/src/main/java" />
+    </SOURCES>
+  </library>
+</component>
