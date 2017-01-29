@@ -15,7 +15,7 @@ class FrameAdapter implements Callback {
    
    @Override
    public void surfaceCreated(SurfaceHolder holder) {
-      frame.onCreated(frame);
+      frame.onStart(frame);
       thread.start();
    }
 

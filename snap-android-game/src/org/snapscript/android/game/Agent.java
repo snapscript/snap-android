@@ -28,7 +28,7 @@ public class Agent {
     private final Activity activity;
     private final Executor executor;
 
-    public Agent(Activity activity) {
+    public Agent(GameActivity activity) {
         this.configuration = new Configuration(activity);
         this.executor = new ThreadPool(1);
         this.game = new GameAgent(activity);

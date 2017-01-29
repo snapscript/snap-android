@@ -47,13 +47,6 @@ public class Frame extends SurfaceView implements Panel {
    }
 
    @Override
-   public void onCreated(Frame frame) {
-      if (panel != null) {
-         panel.onCreated(frame);
-      }
-   }
-
-   @Override
    public void onChanged(Frame frame, int format, int width, int height) {
       if (panel != null) {
          panel.onChanged(frame, format, width, height);
