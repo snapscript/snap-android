@@ -1,7 +1,9 @@
 package org.snapscript.android.game;
 
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.res.Resources;
+import android.provider.Settings;
 
 import java.net.URI;
 
@@ -10,14 +12,20 @@ public class Configuration {
     private static final String PROCESS_TEMPLATE = "android-%s";
     private static final String ADDRESS_TEMPLATE = "http://%s:%s/resource";
 
+    private final ContentResolver resolver;
     private final Resources resources;
 
     public Configuration(Context context) {
+        this.resolver = context.getContentResolver();
         this.resources = context.getResources();
     }
 
+    public String getDeviceKey() {
+        return Settings.Secure.getString(resolver, Settings.Secure.ANDROID_ID);
+    }
+
     public String getProcessName() {
-        return String.format(PROCESS_TEMPLATE, System.currentTimeMillis());
+        return String.format(PROCESS_TEMPLATE, getDeviceKey());
     }
 
     public URI getRemoteAddress() {

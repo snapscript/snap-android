@@ -26,12 +26,22 @@
       <file leaf-file-name="Agent.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/snapscript/android/game/Agent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
+            <state relative-caret-position="511">
+              <caret line="81" column="13" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
               <folding>
                 <element signature="e#2169#2488#0" expanded="true" />
                 <element signature="e#2487#2488#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameAgent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/snapscript/android/game/GameAgent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-124">
+              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -59,7 +69,7 @@
       <file leaf-file-name="GameActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/snapscript/android/game/GameActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
+            <state relative-caret-position="-49">
               <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
               <folding />
             </state>
@@ -69,17 +79,17 @@
       <file leaf-file-name="Configuration.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/snapscript/android/game/Configuration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="233">
+              <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
               <folding>
-                <element signature="e#750#791#0" expanded="true" />
-                <element signature="e#864#905#0" expanded="true" />
-                <element signature="e#978#1018#0" expanded="true" />
-                <element signature="e#1076#1115#0" expanded="true" />
-                <element signature="e#1175#1217#0" expanded="true" />
-                <element signature="e#1274#1313#0" expanded="true" />
-                <element signature="e#1387#1429#0" expanded="true" />
-                <element signature="e#1502#1542#0" expanded="true" />
+                <element signature="e#1032#1073#0" expanded="true" />
+                <element signature="e#1146#1187#0" expanded="true" />
+                <element signature="e#1260#1300#0" expanded="true" />
+                <element signature="e#1358#1397#0" expanded="true" />
+                <element signature="e#1457#1499#0" expanded="true" />
+                <element signature="e#1556#1595#0" expanded="true" />
+                <element signature="e#1669#1711#0" expanded="true" />
+                <element signature="e#1784#1824#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,16 +100,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -164,9 +164,9 @@
         <option value="$PROJECT_DIR$/src/org/snapscript/android/game/FrameListener.java" />
         <option value="$PROJECT_DIR$/src/org/snapscript/android/game/FrameAdapter.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/libs/snap-agent-1.0.2-jar-with-dependencies.jar!/org/snapscript/agent/ProcessMode.class" />
         <option value="$PROJECT_DIR$/src/org/snapscript/android/game/Configuration.java" />
         <option value="$PROJECT_DIR$/src/org/snapscript/android/game/Agent.java" />
-        <option value="$PROJECT_DIR$/libs/snap-agent-1.0.2-jar-with-dependencies.jar!/org/snapscript/agent/ProcessMode.class" />
       </list>
     </option>
   </component>
@@ -453,7 +453,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../snap-develop/snap-agent/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../futurama-space-invaders-master" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="device.picker.selection" value="Nexus_5_API_25" />
     <property name="MemoryMonitor.minimized" value="true" />
@@ -754,7 +754,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="135" y="23" width="1345" height="957" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -778,7 +778,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39928487" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5482718" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -833,10 +833,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-          <folding>
-            <element signature="e#1096#1453#0" expanded="true" />
-            <element signature="e#1452#1453#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -866,17 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/snapscript/android/game/GameAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding>
-            <element signature="e#1096#1453#0" expanded="true" />
-            <element signature="e#1452#1453#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -897,14 +883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/snapscript/android/game/GameActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -946,20 +924,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/snapscript/android/game/Configuration.java">
+    <entry file="file://$PROJECT_DIR$/src/org/snapscript/android/game/GameActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="e#750#791#0" expanded="true" />
-            <element signature="e#864#905#0" expanded="true" />
-            <element signature="e#978#1018#0" expanded="true" />
-            <element signature="e#1076#1115#0" expanded="true" />
-            <element signature="e#1175#1217#0" expanded="true" />
-            <element signature="e#1274#1313#0" expanded="true" />
-            <element signature="e#1387#1429#0" expanded="true" />
-            <element signature="e#1502#1542#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-49">
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/snapscript/android/game/GameAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-124">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -971,10 +948,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/snapscript/android/game/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+          <folding>
+            <element signature="e#1032#1073#0" expanded="true" />
+            <element signature="e#1146#1187#0" expanded="true" />
+            <element signature="e#1260#1300#0" expanded="true" />
+            <element signature="e#1358#1397#0" expanded="true" />
+            <element signature="e#1457#1499#0" expanded="true" />
+            <element signature="e#1556#1595#0" expanded="true" />
+            <element signature="e#1669#1711#0" expanded="true" />
+            <element signature="e#1784#1824#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/snapscript/android/game/Agent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
+        <state relative-caret-position="511">
+          <caret line="81" column="13" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
           <folding>
             <element signature="e#2169#2488#0" expanded="true" />
             <element signature="e#2487#2488#0" expanded="true" />

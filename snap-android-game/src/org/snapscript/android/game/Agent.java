@@ -81,6 +81,7 @@ public class Agent {
     private void log() {
         try {
             Log.i(TAG, "remote-address=" + configuration.getRemoteAddress());
+            Log.i(TAG, "process-name=" + configuration.getProcessName());
             Log.i(TAG, "log-level=" + configuration.getLogLevel());
             Log.i(TAG, "event-port=" + configuration.getEventPort());
             Log.i(TAG, "thread-count=" + configuration.getThreadCount());
