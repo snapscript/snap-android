@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Snake</string>
+    <string name="app_name">Game</string>
     <string name="title_activity_game">GameActivity</string>
     <string name="remote_host">192.168.1.66</string>
     <string name="remote_port">4457</string>
