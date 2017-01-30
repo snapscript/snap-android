@@ -14,7 +14,7 @@ public class FrameThread implements Runnable {
    private static final String TAG = FrameThread.class.getSimpleName();
 
    // desired fps
-   private final static int FPS = 50;
+   private final static int FPS = 20;
 
    public static int getFps() {
       return FPS;
@@ -107,7 +107,7 @@ public class FrameThread implements Runnable {
                framesSkipped = 0;
 
                // update game state
-               frame.onUpdate(frame, canvas);
+               frame.onUpdate(frame);
 
                updateTime = System.currentTimeMillis() - beginTime;
                
@@ -117,7 +117,7 @@ public class FrameThread implements Runnable {
                // calculate how long did the cycle take
                timeDiff = System.currentTimeMillis() - beginTime;
 
-               Log.i(TAG, "Time taken for update and render " + timeDiff + " and update was " + updateTime);
+               //Log.i(TAG, "Time taken for update and render " + timeDiff + " and update was " + updateTime);
                
                // calculate sleep time
                sleepTime = (int) (FRAME_PERIOD - timeDiff);
@@ -136,7 +136,7 @@ public class FrameThread implements Runnable {
                // we need to catch up
                while (sleepTime < 0 && framesSkipped < MAX_FRAME_SKIPS) {
                   // update without rendering
-                  this.frame.onUpdate(frame, canvas);
+                  this.frame.onUpdate(frame);
 
                   // add frame period to check if in next frame
                   sleepTime += FRAME_PERIOD;

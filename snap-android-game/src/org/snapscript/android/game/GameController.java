@@ -20,27 +20,22 @@ public class GameController implements View.OnTouchListener {
     }
 
     public void onRightToLeftSwipe(View v) {
-        Log.v(TAG, "RightToLeftSwipe!");
         frame.onRightToLeftSwipe(frame);
     }
 
     public void onLeftToRightSwipe(View v) {
-        Log.v(TAG, "LeftToRightSwipe!");
         frame.onLeftToRightSwipe(frame);
     }
 
     public void onTopToBottomSwipe(View v) {
-        Log.v(TAG, "onTopToBottomSwipe!");
         frame.onTopToBottomSwipe(frame);
     }
 
     public void onBottomToTopSwipe(View v) {
-        Log.v(TAG, "onBottomToTopSwipe!");
         frame.onBottomToTopSwipe(frame);
     }
 
     private void onClick(View v, int x, int y) {
-        Log.v(TAG, "onClick!");
         frame.onClick(frame, x, y);
     }
 

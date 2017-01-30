@@ -41,7 +41,7 @@ public class GameActivity extends Activity {
     }
     
     public void onStart(Frame frame) {
-       Log.d(TAG, "Started with " + frame);
+       Log.d(TAG, "Started...");
        this.frame = frame;
     }
 

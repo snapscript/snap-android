@@ -33,16 +33,16 @@ public class Frame extends SurfaceView implements Panel {
    }
 
    @Override
-   public void onRender(Frame frame, Canvas canvas) {
+   public void onUpdate(Frame frame) {
       if (panel != null) {
-         panel.onRender(frame, canvas);
+         panel.onUpdate(frame);
       }
    }
 
    @Override
-   public void onUpdate(Frame frame, Canvas canvas) {
+   public void onRender(Frame frame, Canvas canvas) {
       if (panel != null) {
-         panel.onUpdate(frame, canvas);
+         panel.onRender(frame, canvas);
       }
    }
 

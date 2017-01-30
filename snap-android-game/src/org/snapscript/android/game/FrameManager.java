@@ -3,12 +3,12 @@ package org.snapscript.android.game;
 import android.view.SurfaceHolder;
 import android.view.SurfaceHolder.Callback;
 
-class FrameAdapter implements Callback {
+class FrameManager implements Callback {
    
    private final FrameThread thread;
    private final Frame frame;
    
-   public FrameAdapter(FrameThread thread, Frame frame) {
+   public FrameManager(FrameThread thread, Frame frame) {
       this.thread = thread;
       this.frame = frame;
    }

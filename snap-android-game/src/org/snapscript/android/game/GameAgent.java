@@ -9,7 +9,7 @@ public class GameAgent implements Game {
 
    private final GameController controller;
    private final GameActivity activity;
-   private final FrameAdapter listener;
+   private final FrameManager listener;
    private final FrameThread thread;
    private final Handler handler;
    private final Frame frame;
@@ -19,7 +19,7 @@ public class GameAgent implements Game {
       this.frame = new Frame(activity);
       this.thread = new FrameThread(frame.getHolder(), frame);
       this.controller = new GameController(frame);
-      this.listener = new FrameAdapter(thread, frame);
+      this.listener = new FrameManager(thread, frame);
       this.activity = activity;
    }
 
