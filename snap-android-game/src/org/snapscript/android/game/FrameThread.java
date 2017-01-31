@@ -117,8 +117,6 @@ public class FrameThread implements Runnable {
                // calculate how long did the cycle take
                timeDiff = System.currentTimeMillis() - beginTime;
 
-               //Log.i(TAG, "Time taken for update and render " + timeDiff + " and update was " + updateTime);
-               
                // calculate sleep time
                sleepTime = (int) (FRAME_PERIOD - timeDiff);
 
