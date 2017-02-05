@@ -7,35 +7,23 @@ import android.util.Log;
 import android.view.SurfaceHolder;
 
 /**
- * The Main thread which contains the game loop. The thread must have access to
+ * The Main thread which contains the game loop. The thread must have access to 
  * the surface view and holder to trigger events every game tick.
  */
 public class FrameThread implements Runnable {
+
    private static final String TAG = FrameThread.class.getSimpleName();
 
-   // desired fps
-   private final static int FPS = 20;
-
-   public static int getFps() {
-      return FPS;
-   }
-
    // maximum number of frames to be skipped
-   private final static int MAX_FRAME_SKIPS = 5;
+   private final static int MAX_FRAME_SKIPS = 10;
 
-   // the frame period
-   private final static int FRAME_PERIOD = 1000 / FPS;
-
-   // Surface holder that can access the physical surface
    private final SurfaceHolder surfaceHolder;
-   
+   private final SampleAverager averager;
    private final AtomicBoolean active;
-
-   // The actual view that handles inputs and draws to the surface
    private final Frame frame;
-
-   // The game loop thread
    private final Thread thread;
+   private final int framePeriod;
+   private final int frameRate;
 
    // Flag to hold game state
    private static boolean running;
@@ -44,17 +32,20 @@ public class FrameThread implements Runnable {
       FrameThread.running = running;
    }
 
-   public FrameThread(SurfaceHolder surfaceHolder, Frame frame) {
+   public FrameThread(SurfaceHolder surfaceHolder, Frame frame, int frameRate) {
+      this.averager = new SampleAverager();
       this.active = new AtomicBoolean(false);
       this.thread = new Thread(this);
       this.surfaceHolder = surfaceHolder;
+      this.framePeriod = 1000 / frameRate;
+      this.frameRate = frameRate;
       this.frame = frame;
       running = true;
    }
 
    public void start() {
       try {
-         if(active.compareAndSet(false, true)) {
+         if (active.compareAndSet(false, true)) {
             thread.start();
          }
       } catch (Exception e) {
@@ -64,7 +55,7 @@ public class FrameThread implements Runnable {
 
    public void stop() {
       try {
-         if(active.compareAndSet(true, false)) {
+         if (active.compareAndSet(true, false)) {
             Thread.interrupted();
             thread.join();
          }
@@ -75,50 +66,28 @@ public class FrameThread implements Runnable {
 
    @Override
    public void run() {
-      Log.d(TAG, "Starting game loop");
-      Canvas canvas;
+      Canvas canvas = null;
 
-      // the time when the cycle begun
-      long beginTime;
-      
-      // time taken to update sceen
-      long updateTime;
-
-      // the time it took for the cycle to execute
-      long timeDiff;
-
-      // ms to sleep (< 0 if we're behind)
-      int sleepTime;
-
-      // number of frames being skipped
-      int framesSkipped;
+      averager.sample(1000 / frameRate); // set an initial average
 
       while (running) {
-         canvas = null;
-         
+         long beginTime = System.currentTimeMillis();
+         float averageTime = averager.average();
+         int averageRate = Math.round(1000 / averageTime);
+
          // try locking the canvas for exclusive pixel editing in the surface
          try {
-            canvas = this.surfaceHolder.lockCanvas();
+            canvas = surfaceHolder.lockCanvas();
 
             synchronized (surfaceHolder) {
-               beginTime = System.currentTimeMillis();
-
-               // reset the frames skipped
-               framesSkipped = 0;
+               int framesSkipped = 0; // reset the frames skipped
 
                // update game state
-               frame.onUpdate(frame);
+               frame.onUpdate(frame, averageRate);
+               frame.onRender(frame, canvas); // render state to the screen: draws the canvas on the panel
 
-               updateTime = System.currentTimeMillis() - beginTime;
-               
-               // render state to the screen: draws the canvas on the panel
-               frame.onRender(frame, canvas);
-
-               // calculate how long did the cycle take
-               timeDiff = System.currentTimeMillis() - beginTime;
-
-               // calculate sleep time
-               sleepTime = (int) (FRAME_PERIOD - timeDiff);
+               long refreshTime = System.currentTimeMillis() - beginTime; // calculate how long did the cycle take
+               long sleepTime = framePeriod - refreshTime; // calculate sleep time
 
                if (sleepTime > 0) {
                   // if sleepTime > 0 we're OK
@@ -127,28 +96,28 @@ public class FrameThread implements Runnable {
                      // for battery saving
                      Thread.sleep(sleepTime);
                   } catch (InterruptedException e) {
-                     e.printStackTrace();
+                     Log.e(TAG, "Frame thread interrupted", e);
                   }
                }
-
-               // we need to catch up
-               while (sleepTime < 0 && framesSkipped < MAX_FRAME_SKIPS) {
-                  // update without rendering
-                  this.frame.onUpdate(frame);
-
-                  // add frame period to check if in next frame
-                  sleepTime += FRAME_PERIOD;
+               while (sleepTime < 0 && framesSkipped < MAX_FRAME_SKIPS) { // we need to catch up
+                  frame.onUpdate(frame, averageRate); // update without rendering
+                  sleepTime += framePeriod; // add frame period to check if in next frame
                   framesSkipped++;
                }
-
-               if (framesSkipped > 0)
+               long totalTime = System.currentTimeMillis() - beginTime;
+               
+               if (framesSkipped > 0) {
                   Log.v(TAG, "Skipped " + framesSkipped + "frames");
+               }
+               averager.sample(totalTime);
+
             }
          } finally {
             // in case of an exception the surface is not left in an
             // inconsistent state
-            if (canvas != null)
+            if (canvas != null) {
                surfaceHolder.unlockCanvasAndPost(canvas);
+            }
          }
       }
    }

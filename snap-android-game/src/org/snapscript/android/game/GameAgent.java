@@ -7,28 +7,29 @@ public class GameAgent implements Game {
    
    private static final String TAG = GameAgent.class.getSimpleName();
 
-   private final GameController controller;
    private final GameActivity activity;
-   private final FrameManager listener;
-   private final FrameThread thread;
    private final Handler handler;
-   private final Frame frame;
    
    public GameAgent(GameActivity activity){
       this.handler = new Handler(activity.getMainLooper());
-      this.frame = new Frame(activity);
-      this.thread = new FrameThread(frame.getHolder(), frame);
-      this.controller = new GameController(frame);
-      this.listener = new FrameManager(thread, frame);
       this.activity = activity;
    }
 
    @Override
    public void start(final Panel panel) {
-      frame.onCreate(panel);
+      start(panel, 20);
+   }
+   
+   @Override
+   public void start(final Panel panel, final int rate) {
       handler.post(new Runnable() {
          @Override
          public void run() {
+            Frame frame = new Frame(activity, panel, rate);
+            FrameThread thread = new FrameThread(frame.getHolder(), frame, rate);
+            GameController controller = new GameController(frame);
+            FrameManager listener = new FrameManager(thread, frame);
+            
             Log.i(TAG, "Posting creation");
             activity.setContentView(frame);
             activity.onStart(frame);

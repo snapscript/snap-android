@@ -1,13 +1,13 @@
 package org.snapscript.android.game;
 
-import java.net.URI;
+import static org.snapscript.agent.ProcessMode.DETACHED;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.snapscript.agent.ProcessAgent;
-import org.snapscript.agent.ProcessMode;
 import org.snapscript.common.ThreadPool;
 import org.snapscript.core.MapModel;
 import org.snapscript.core.Model;
@@ -15,8 +15,6 @@ import org.snapscript.core.Model;
 import android.app.Activity;
 import android.os.StrictMode;
 import android.util.Log;
-
-import static org.snapscript.agent.ProcessMode.DETACHED;
 
 public class Agent {
 
@@ -54,6 +52,7 @@ public class Agent {
             final Model model = new MapModel(map);
             final ProcessAgent agent = new ProcessAgent(
                     configuration.getRemoteAddress(),
+                    configuration.getSystemName(),
                     configuration.getProcessName(),
                     configuration.getLogLevel(),
                     configuration.getEventPort(),
@@ -81,6 +80,7 @@ public class Agent {
     private void log() {
         try {
             Log.i(TAG, "remote-address=" + configuration.getRemoteAddress());
+            Log.i(TAG, "system-name=" + configuration.getSystemName());
             Log.i(TAG, "process-name=" + configuration.getProcessName());
             Log.i(TAG, "log-level=" + configuration.getLogLevel());
             Log.i(TAG, "event-port=" + configuration.getEventPort());
