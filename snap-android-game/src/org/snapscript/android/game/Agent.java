@@ -55,7 +55,6 @@ public class Agent {
                     configuration.getSystemName(),
                     configuration.getProcessName(),
                     configuration.getLogLevel(),
-                    configuration.getEventPort(),
                     configuration.getThreadCount(),
                     configuration.getStackSize());
 
@@ -83,7 +82,6 @@ public class Agent {
             Log.i(TAG, "system-name=" + configuration.getSystemName());
             Log.i(TAG, "process-name=" + configuration.getProcessName());
             Log.i(TAG, "log-level=" + configuration.getLogLevel());
-            Log.i(TAG, "event-port=" + configuration.getEventPort());
             Log.i(TAG, "thread-count=" + configuration.getThreadCount());
             Log.i(TAG, "stack-size=" + configuration.getStackSize());
             Log.i(TAG, "game-name=" + configuration.getGameName());

@@ -40,10 +40,6 @@ public class Configuration {
       return Integer.parseInt(resources.getString(R.string.remote_port));
    }
 
-   public int getEventPort() {
-      return Integer.parseInt(resources.getString(R.string.event_port));
-   }
-
    public String getLogLevel() {
       return resources.getString(R.string.log_level);
    }
