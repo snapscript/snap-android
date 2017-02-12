@@ -107,7 +107,7 @@ public class FrameThread implements Runnable {
                long totalTime = System.currentTimeMillis() - beginTime;
                
                if (framesSkipped > 0) {
-                  Log.v(TAG, "Skipped " + framesSkipped + "frames");
+                  Log.v(TAG, "Skipped " + framesSkipped + " frames");
                }
                averager.sample(totalTime);
 
