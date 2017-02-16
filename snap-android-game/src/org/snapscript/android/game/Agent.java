@@ -1,6 +1,6 @@
 package org.snapscript.android.game;
 
-import static org.snapscript.agent.ProcessMode.DETACHED;
+import static org.snapscript.agent.ProcessMode.SERVICE;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -51,6 +51,7 @@ public class Agent {
             final Map<String, Object> map = new HashMap<String, Object>();
             final Model model = new MapModel(map);
             final ProcessAgent agent = new ProcessAgent(
+                    SERVICE,
                     configuration.getRemoteAddress(),
                     configuration.getSystemName(),
                     configuration.getProcessName(),
@@ -65,7 +66,7 @@ public class Agent {
                 @Override
                 public void run() {
                     try {
-                        agent.start(DETACHED, model);
+                        agent.start(model);
                     } catch (Exception e) {
                         Log.e(TAG, "Error starting agent", e);
                     }
