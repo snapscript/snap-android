@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="app_name">SuperMario</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_mario">MarioActivity</string>
+    
+    <!-- string name="factory_class">org.snapscript.game.framework.gfx.AndroidClassGameFactory</string>
+    <string name="game_class">mario.core.MarioGame</string-->
+    
+    <string name="factory_class">org.snapscript.game.framework.script.AndroidScriptGameFactory</string>
+    <string name="remote_host">192.168.1.66</string>
+    <string name="remote_port">4457</string>
+    <string name="log_level">DEBUG</string>
+    <string name="variable_context">context</string>
+    <string name="variable_launcher">launcher</string>
+    <string name="variable_width">width</string>
+    <string name="variable_height">height</string>
+    <string name="variable_landscape">landscape</string>    
+    <string name="thread_count">4</string>
+    <string name="stack_size">2000000</string>
+    
+</resources>
