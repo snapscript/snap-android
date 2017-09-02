@@ -39,33 +39,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AndroidActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AndroidActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/snapscript/game/framework/gfx/AndroidActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="827" max-vertical-offset="1819">
-              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.42115027" vertical-offset="1269" max-vertical-offset="2261">
+              <caret line="107" column="14" selection-start-line="107" selection-start-column="14" selection-end-line="107" selection-end-column="14" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#3089#3447#0" expanded="true" />
+                <element signature="e#3432#3433#0" expanded="true" />
+                <element signature="e#3489#3849#0" expanded="true" />
+                <element signature="e#3834#3835#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="AndroidBridgeBuilder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/android/AndroidBridgeBuilder.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/android/AndroidBridgeBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1078" max-vertical-offset="1394">
-              <caret line="85" column="41" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MethodInvocation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-core/1.1.2/snap-core-1.1.2-sources.jar!/org/snapscript/core/index/MethodInvocation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1496" max-vertical-offset="1989">
+              <caret line="88" column="41" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -74,7 +67,7 @@
       <file leaf-file-name="MethodCallBinder.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-core/1.1.2/snap-core-1.1.2-sources.jar!/org/snapscript/core/index/MethodCallBinder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+            <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="595">
               <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
@@ -84,7 +77,7 @@
       <file leaf-file-name="Code.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-dx/1.1.2/snap-dx-1.1.2-sources.jar!/org/snapscript/dx/Code.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="10310" max-vertical-offset="14994">
+            <state vertical-scroll-proportion="0.0" vertical-offset="11169" max-vertical-offset="15674">
               <caret line="657" column="23" selection-start-line="657" selection-start-column="23" selection-end-line="657" selection-end-column="23" />
               <folding />
             </state>
@@ -92,13 +85,11 @@
         </entry>
       </file>
       <file leaf-file-name="ProxyBuilderWrapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/android/ProxyBuilderWrapper.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/android/ProxyBuilderWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="219" max-vertical-offset="527">
-              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="612">
+              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,22 +97,29 @@
       <file leaf-file-name="Bitmap.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../../android/sdk/sources/android-21/android/graphics/Bitmap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="11994" max-vertical-offset="27132">
-              <caret line="765" column="63" selection-start-line="765" selection-start-column="63" selection-end-line="765" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="12206" max-vertical-offset="27132">
+              <caret line="775" column="40" selection-start-line="775" selection-start-column="40" selection-end-line="775" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProxyAdapterInvocation.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/android/ProxyAdapterInvocation.java">
+      <file leaf-file-name="ProxyConstructorInvocation.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/android/ProxyConstructorInvocation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.77272725" vertical-offset="1054" max-vertical-offset="1496">
-              <caret line="86" column="32" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
-              <folding>
-                <element signature="e#1414#1415#0" expanded="true" />
-                <element signature="e#1449#1450#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="436" max-vertical-offset="1428">
+              <caret line="52" column="15" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProxyAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-dx/1.1.2/snap-dx-1.1.2-sources.jar!/org/snapscript/dx/stock/ProxyAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4029">
+              <caret line="11" column="14" selection-start-line="9" selection-start-column="0" selection-end-line="21" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,7 +127,7 @@
       <file leaf-file-name="Canvas.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../../android/sdk/sources/android-21/android/graphics/Canvas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="21692" max-vertical-offset="33694">
+            <state vertical-scroll-proportion="0.0" vertical-offset="23103" max-vertical-offset="34935">
               <caret line="1359" column="72" selection-start-line="1359" selection-start-column="72" selection-end-line="1359" selection-end-column="72" />
               <folding />
             </state>
@@ -139,8 +137,8 @@
       <file leaf-file-name="ProxyBuilder.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-dx/1.1.2/snap-dx-1.1.2-sources.jar!/org/snapscript/dx/stock/ProxyBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.071429" vertical-offset="3689" max-vertical-offset="20689">
-              <caret line="275" column="0" selection-start-line="275" selection-start-column="0" selection-end-line="275" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="5219" max-vertical-offset="24004">
+              <caret line="307" column="0" selection-start-line="307" selection-start-column="0" selection-end-line="307" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -156,14 +154,14 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/BridgeHandler.java" />
-        <option value="$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/android/ProxyBuilderGenerator.java" />
+        <option value="$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/BridgeHandler.java" />
+        <option value="$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/android/ProxyBuilderGenerator.java" />
         <option value="$MAVEN_REPOSITORY$/org/snapscript/snap-dx/1.1.2/snap-dx-1.1.2-sources.jar!/org/snapscript/dx/DexMaker.java" />
         <option value="$PROJECT_DIR$/src/org/snapscript/game/framework/fileio/AndroidFileIO.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$MAVEN_REPOSITORY$/org/snapscript/snap-dx/1.1.2/snap-dx-1.1.2-sources.jar!/org/snapscript/dx/stock/ProxyBuilder.java" />
+        <option value="$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/android/ProxyAdapterInvocation.java" />
         <option value="$PROJECT_DIR$/src/org/snapscript/game/framework/gfx/AndroidActivity.java" />
-        <option value="$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/android/ProxyAdapterInvocation.java" />
       </list>
     </option>
   </component>
@@ -512,17 +510,17 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46862745" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.67058825" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5392157" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17857143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44411764" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -548,19 +546,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/android/ProxyBuilderInvocation.java</url>
+          <url>jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/android/ProxyBuilderInvocation.java</url>
           <line>22</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/android/ProxyBuilderGenerator.java</url>
+          <url>jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/android/ProxyBuilderGenerator.java</url>
           <line>49</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/MethodComparator.java</url>
+          <url>jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/MethodComparator.java</url>
           <line>30</line>
           <properties />
           <option name="timeStamp" value="26" />
@@ -591,57 +589,44 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/snapscript/snap-dx/1.1.2/snap-dx-1.1.2-sources.jar!/org/snapscript/dx/stock/ProxyBuilder.java</url>
-          <line>645</line>
+          <line>756</line>
           <properties />
           <option name="timeStamp" value="45" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/android/ProxyAdapterInvocation.java</url>
-          <line>84</line>
-          <properties />
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="63" />
+      <option name="time" value="64" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/snapscript/game/framework/Screen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.96139705" vertical-offset="693" max-vertical-offset="1411">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/standard/EnhancerGenerator.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/standard/EnhancerGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/standard/MethodInterceptorHandler.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/standard/MethodInterceptorHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/standard/MethodProxyWrapper.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/standard/MethodProxyWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/standard/StandardBridgeBuilder.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/standard/StandardBridgeBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/standard/MethodProxyInvocation.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/standard/MethodProxyInvocation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
@@ -704,56 +689,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/generate/BridgeInstanceBuilder.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/generate/BridgeInstanceBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="629">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/generate/BridgeInstanceConverter.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/generate/BridgeInstanceConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/generate/ClassGenerator.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/generate/ClassGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
           <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/generate/ConstructorArguments.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/generate/ConstructorArguments.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/generate/ConstructorResolver.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/generate/ConstructorResolver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/generate/ObjectGenerator.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/generate/ObjectGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="93" max-vertical-offset="1003">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/ThreadLocalHandler.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/ThreadLocalHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/MethodComparator.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/MethodComparator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="612">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
@@ -761,14 +746,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/InvocationRouter.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/InvocationRouter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1309">
           <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/android/ProxyBuilderInvocation.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/android/ProxyBuilderInvocation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
@@ -776,21 +761,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/generate/BridgeHolder.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/generate/BridgeHolder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/generate/BridgeInstance.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/generate/BridgeInstance.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="918">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/android/ProxyBuilderGenerator.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/android/ProxyBuilderGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="313" max-vertical-offset="850">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
@@ -850,7 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="7754" max-vertical-offset="15980">
           <caret line="525" column="6" selection-start-line="525" selection-start-column="6" selection-end-line="525" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -866,7 +850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="110" max-vertical-offset="11968">
           <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -874,7 +857,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2796" max-vertical-offset="8415">
           <caret line="230" column="35" selection-start-line="230" selection-start-column="35" selection-end-line="230" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -882,7 +864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="11925" max-vertical-offset="14790">
           <caret line="774" column="0" selection-start-line="774" selection-start-column="0" selection-end-line="774" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -890,7 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1708" max-vertical-offset="2295">
           <caret line="130" column="30" selection-start-line="130" selection-start-column="30" selection-end-line="130" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -898,7 +878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="296" max-vertical-offset="867">
           <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -914,14 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../android/sdk/sources/android-21/android/graphics/Bitmap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="11994" max-vertical-offset="27132">
-          <caret line="765" column="63" selection-start-line="765" selection-start-column="63" selection-end-line="765" selection-end-column="63" />
           <folding />
         </state>
       </provider>
@@ -944,47 +915,61 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-dx/1.1.2/snap-dx-1.1.2-sources.jar!/org/snapscript/dx/stock/ProxyBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.071429" vertical-offset="3689" max-vertical-offset="20689">
-          <caret line="275" column="0" selection-start-line="275" selection-start-column="0" selection-end-line="275" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="5219" max-vertical-offset="24004">
+          <caret line="307" column="0" selection-start-line="307" selection-start-column="0" selection-end-line="307" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/android/AndroidBridgeBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1496" max-vertical-offset="1989">
+          <caret line="88" column="41" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/android/ProxyBuilderWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="612">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../android/sdk/sources/android-21/android/graphics/Bitmap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="12206" max-vertical-offset="27132">
+          <caret line="775" column="40" selection-start-line="775" selection-start-column="40" selection-end-line="775" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-platform/1.1.2/snap-platform-1.1.2-sources.jar!/org/snapscript/bridge/android/ProxyConstructorInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="436" max-vertical-offset="1428">
+          <caret line="52" column="15" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-dx/1.1.2/snap-dx-1.1.2-sources.jar!/org/snapscript/dx/stock/ProxyAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4029">
+          <caret line="11" column="14" selection-start-line="9" selection-start-column="0" selection-end-line="21" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/snapscript/game/framework/gfx/AndroidActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="827" max-vertical-offset="1819">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.42115027" vertical-offset="1269" max-vertical-offset="2261">
+          <caret line="107" column="14" selection-start-line="107" selection-start-column="14" selection-end-line="107" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/android/AndroidBridgeBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1078" max-vertical-offset="1394">
-          <caret line="85" column="41" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/android/ProxyBuilderWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="219" max-vertical-offset="527">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/snapscript/snap-bridge/1.1.2/snap-bridge-1.1.2-sources.jar!/org/snapscript/bridge/android/ProxyAdapterInvocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77272725" vertical-offset="1054" max-vertical-offset="1496">
-          <caret line="86" column="32" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
-          <folding>
-            <element signature="e#1414#1415#0" expanded="true" />
-            <element signature="e#1449#1450#0" expanded="true" />
+            <element signature="e#3089#3447#0" expanded="true" />
+            <element signature="e#3432#3433#0" expanded="true" />
+            <element signature="e#3489#3849#0" expanded="true" />
+            <element signature="e#3834#3835#0" expanded="true" />
           </folding>
         </state>
       </provider>
