@@ -28,7 +28,7 @@ public class AndroidAudio implements Audio {
 	public AndroidAudio(Game game) {
 	   game.getContext().setVolumeControlStream(AudioManager.STREAM_MUSIC);
 		this.assets = game.getContext().getAssets();
-		this.soundPool = new SoundPool(20, AudioManager.STREAM_MUSIC, 0);
+		this.soundPool = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
 	}
 
 	/**

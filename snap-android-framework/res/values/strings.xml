@@ -17,7 +17,7 @@
     <string name="variable_width">width</string>
     <string name="variable_height">height</string>
     <string name="variable_landscape">landscape</string>    
-    <string name="thread_count">10</string>
+    <string name="thread_count">5</string>
     <string name="stack_size">2000000</string>
     
 </resources>
