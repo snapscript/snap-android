@@ -1,9 +1,9 @@
 package org.snapscript.game.framework.gfx;
 
 import java.util.concurrent.Executor;
-import java.util.concurrent.ScheduledThreadPoolExecutor;
 
 import org.snapscript.android.game.R;
+import org.snapscript.common.thread.ThreadPool;
 
 import android.os.StrictMode;
 import android.util.Log;
@@ -18,8 +18,8 @@ public class AndroidGameBuilder {
    private final boolean isLandscape;
    
    public AndroidGameBuilder(AndroidActivity activity, float width, float height, boolean isLandscape){
-      this.executor = new ScheduledThreadPoolExecutor(1);
       this.launcher = new AndroidGameLauncher(activity);
+      this.executor = new ThreadPool(1);
       this.activity = activity;
       this.width = width;
       this.height = height;

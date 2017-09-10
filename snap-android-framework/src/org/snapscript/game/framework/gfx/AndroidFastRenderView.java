@@ -64,6 +64,7 @@ public class AndroidFastRenderView extends SurfaceView implements Runnable {
 			}
 		}catch(Exception e) {
 			Log.e("render", "Error rendering screen", e);
+			e.printStackTrace();
 		}
 	}
 
