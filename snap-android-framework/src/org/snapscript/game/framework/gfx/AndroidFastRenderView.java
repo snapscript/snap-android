@@ -38,7 +38,7 @@ public class AndroidFastRenderView extends SurfaceView implements Runnable {
 	}
 
 	public void resume() {
-	   if(running = false) {
+	   if(running == false) {
 	      running = true;
 		   renderThread = new Thread(this);
 		   renderThread.start();
@@ -78,7 +78,7 @@ public class AndroidFastRenderView extends SurfaceView implements Runnable {
 			try {
 				renderThread.join();
 				return;
-			} catch (InterruptedException e) {
+			} catch (Exception e) {
 				// retry
 			}
 		}
