@@ -71,54 +71,11 @@ public class AndroidActivity extends Activity implements GameListener {
       layout.addView(pb);
       setContentView(layout);
 
-
-        try {
-            final Constructor constructor = ArrayList.class.getDeclaredConstructor(int.class);
-            final ProxyBuilder builder = ProxyBuilder.forClass(Object.class).parentClassLoader(AndroidActivity.class.getClassLoader());
-            final Class accessorClass = builder.buildConstructorAccessor(constructor);
-            final ProxyAdapter accessor = (ProxyAdapter)accessorClass.newInstance();
-
-            timeIt("adapter (100000)", new Runnable() {
-                public void run() {
-                    try {
-                        for (int i = 0; i < 100000; i++) {
-                            accessor.invoke(null, 10);
-                        }
-                    }catch(Exception e){
-                        e.printStackTrace();
-                    }
-                }
-            });
-            timeIt("reflect (100000)", new Runnable() {
-                public void run() {
-                    try {
-                        for (int i = 0; i < 100000; i++) {
-                            constructor.newInstance(10);
-                        }
-                    }catch(Exception e){
-                        e.printStackTrace();
-                    }
-                }
-            });
-            System.err.println(accessor);
-        }catch(Exception e){
-            e.printStackTrace();
-        }
-
-//        try{
-//            Thread.sleep(10000000);
-//        }catch(Exception e){}
-
 		AndroidGameBuilder factory = new AndroidGameBuilder(this, w, h, isLandscape);
 		factory.createGame();
       state = ActivityState.CREATED;
 	}
-    private static void timeIt(String message, Runnable r){
-        long s = System.currentTimeMillis();
-        r.run();
-        long f = System.currentTimeMillis();
-        System.err.println(message  +": "+(f-s));
-    }
+
 	@Override
 	public void onCreate(Game game){
 	   this.game = game;

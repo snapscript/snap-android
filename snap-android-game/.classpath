@@ -5,6 +5,13 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
-	<classpathentry kind="lib" path="libs/snapa.jar"/>
+	<classpathentry kind="lib" path="libs/snap-agent-1.1.3.jar"/>
+	<classpathentry kind="lib" path="libs/snap-common-1.1.3.jar"/>
+	<classpathentry kind="lib" path="libs/snap-compile-1.1.3.jar"/>
+	<classpathentry kind="lib" path="libs/snap-core-1.1.3.jar"/>
+	<classpathentry kind="lib" path="libs/snap-dx-1.1.3.jar"/>
+	<classpathentry kind="lib" path="libs/snap-parse-1.1.3.jar"/>
+	<classpathentry kind="lib" path="libs/snap-platform-1.1.3.jar"/>
+	<classpathentry kind="lib" path="libs/snap-tree-1.1.3.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
