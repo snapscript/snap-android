@@ -70,7 +70,12 @@ public class AndroidActivity extends Activity implements GameListener {
       layout.setBackgroundColor(Color.BLACK);
       layout.addView(pb);
       setContentView(layout);
-
+      Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
+		  @Override
+		  public void uncaughtException(Thread t, Throwable e) {
+			  e.printStackTrace();
+		  }
+	  });
 		AndroidGameBuilder factory = new AndroidGameBuilder(this, w, h, isLandscape);
 		factory.createGame();
       state = ActivityState.CREATED;
