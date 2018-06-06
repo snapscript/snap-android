@@ -1,16 +1,16 @@
 package org.snapscript.android.game;
 
-import static org.snapscript.agent.ProcessMode.SERVICE;
+import static org.snapscript.studio.agent.ProcessMode.SERVICE;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import org.snapscript.agent.ProcessAgent;
 import org.snapscript.common.thread.ThreadPool;
-import org.snapscript.core.MapModel;
-import org.snapscript.core.Model;
+import org.snapscript.core.scope.MapModel;
+import org.snapscript.core.scope.Model;
+import org.snapscript.studio.agent.ProcessAgent;
 
 import android.app.Activity;
 import android.os.StrictMode;

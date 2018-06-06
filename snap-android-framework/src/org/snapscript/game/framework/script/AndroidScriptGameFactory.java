@@ -1,16 +1,16 @@
 package org.snapscript.game.framework.script;
 
-import static org.snapscript.agent.ProcessMode.SERVICE;
+import static org.snapscript.studio.agent.ProcessMode.SERVICE;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.snapscript.agent.ProcessAgent;
-import org.snapscript.core.MapModel;
-import org.snapscript.core.Model;
+import org.snapscript.core.scope.MapModel;
+import org.snapscript.core.scope.Model;
 import org.snapscript.game.framework.gfx.AndroidActivity;
 import org.snapscript.game.framework.gfx.AndroidGameFactory;
 import org.snapscript.game.framework.gfx.AndroidGameLauncher;
+import org.snapscript.studio.agent.ProcessAgent;
 
 public class AndroidScriptGameFactory implements AndroidGameFactory {
 
