@@ -45,7 +45,7 @@ public class AndroidScriptGameFactory implements AndroidGameFactory {
                Log.i(TAG, "Finished");
             }
          };
-         URI root = URI.create(configuration.getRemoteHost());
+         URI root = URI.create("http://" + configuration.getRemoteHost() + ":" + configuration.getRemotePort());
          
          map.put(configuration.getContextName(), activity);
          map.put(configuration.getLauncherName(), launcher);
