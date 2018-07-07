@@ -77,13 +77,14 @@ public class FrameThread implements Runnable {
 
          // try locking the canvas for exclusive pixel editing in the surface
          try {
+            averageRate = averageRate == 0 ? frameRate : averageRate; // make sure its not zero
             canvas = surfaceHolder.lockCanvas();
 
             synchronized (surfaceHolder) {
                int framesSkipped = 0; // reset the frames skipped
 
                // update game state
-               frame.onUpdate(frame, averageRate);
+               frame.onUpdate(frame, averageRate); 
                frame.onRender(frame, canvas); // render state to the screen: draws the canvas on the panel
 
                long refreshTime = System.currentTimeMillis() - beginTime; // calculate how long did the cycle take

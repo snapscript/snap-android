@@ -1,7 +1,6 @@
 package org.snapscript.android.game;
 
-import static org.snapscript.studio.agent.ProcessMode.SERVICE;
-
+import java.net.URI;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Executor;
@@ -11,6 +10,10 @@ import org.snapscript.common.thread.ThreadPool;
 import org.snapscript.core.scope.MapModel;
 import org.snapscript.core.scope.Model;
 import org.snapscript.studio.agent.ProcessAgent;
+import org.snapscript.studio.agent.ProcessContext;
+import org.snapscript.studio.agent.ProcessMode;
+import org.snapscript.studio.agent.ProcessStore;
+import org.snapscript.studio.agent.worker.store.WorkerStore;
 
 import android.app.Activity;
 import android.os.StrictMode;
@@ -50,15 +53,24 @@ public class Agent {
             final StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             final Map<String, Object> map = new HashMap<String, Object>();
             final Model model = new MapModel(map);
+            final AgentLog log = new AgentLog(TAG);
+            final ProcessStore store = new WorkerStore(configuration.getRemoteAddress());
+            final ProcessContext context = new ProcessContext(
+                  ProcessMode.SERVICE,
+                  store,
+                  configuration.getProcessName(),
+                  configuration.getSystemName(),
+                  configuration.getThreadCount(),
+                  configuration.getStackSize());
             final ProcessAgent agent = new ProcessAgent(
-                    SERVICE,
-                    configuration.getRemoteAddress(),
-                    configuration.getSystemName(),
-                    configuration.getProcessName(),
-                    configuration.getLogLevel(),
-                    configuration.getThreadCount(),
-                    configuration.getStackSize());
-
+                    context,
+                    configuration.getLogLevel());
+            final Runnable task = new Runnable() {
+               @Override
+               public void run(){
+                  Log.i(TAG, "Finished");
+               }
+            };
             StrictMode.setThreadPolicy(policy);
             map.put(configuration.getContextName(), activity);
             map.put(configuration.getGameName(), game);
@@ -66,7 +78,8 @@ public class Agent {
                 @Override
                 public void run() {
                     try {
-                        agent.start(model);
+                        URI root = URI.create("http://" + configuration.getRemoteHost() + ":" + configuration.getRemotePort());
+                        agent.start(root, task, model, log);
                     } catch (Exception e) {
                         Log.e(TAG, "Error starting agent", e);
                     }

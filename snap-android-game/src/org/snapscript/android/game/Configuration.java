@@ -2,6 +2,8 @@ package org.snapscript.android.game;
 
 import java.net.URI;
 
+import org.snapscript.studio.agent.log.LogLevel;
+
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Build;
@@ -9,7 +11,7 @@ import android.os.Build;
 public class Configuration {
 
    private static final String PROCESS_TEMPLATE = "android-%s";
-   private static final String ADDRESS_TEMPLATE = "http://%s:%s/resource";
+   private static final String ADDRESS_TEMPLATE = "http://%s:%s/download";
    private static final String SYSTEM_TEMPLATE = "Android %s";
 
    private final KeyGenerator generator;
@@ -40,8 +42,8 @@ public class Configuration {
       return Integer.parseInt(resources.getString(R.string.remote_port));
    }
 
-   public String getLogLevel() {
-      return resources.getString(R.string.log_level);
+   public LogLevel getLogLevel() {
+      return LogLevel.resolveLevel(resources.getString(R.string.log_level));
    }
 
    public String getContextName() {

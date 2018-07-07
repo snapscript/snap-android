@@ -1,10 +1,5 @@
 package org.snapscript.game.framework.gfx;
 
-import java.lang.reflect.Constructor;
-import java.util.ArrayList;
-
-import org.snapscript.dx.stock.ProxyAdapter;
-import org.snapscript.dx.stock.ProxyBuilder;
 import org.snapscript.game.framework.Game;
 import org.snapscript.game.framework.GameListener;
 
